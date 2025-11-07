@@ -1,0 +1,56 @@
+/* Fondo con degradado animado */
+.app-bg {
+  min-height: 100vh;
+  background: linear-gradient(-45deg, #1e3c72, #2a5298, #6dd5ed, #2193b0);
+  background-size: 400% 400%;
+  animation: gradientMove 12s ease infinite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+/* Animación del fondo */
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Contenedor con efecto glassmorphism */
+.glass-container {
+  backdrop-filter: blur(12px);
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease-in-out;
+}
+
+.glass-container:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.35);
+}
+
+/* Texto y tabs */
+h1 {
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 1px;
+}
+
+.nav-tabs .nav-link {
+  color: #ffffffcc;
+  background: transparent;
+  border: none;
+  transition: 0.3s;
+}
+
+.nav-tabs .nav-link.active {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+}
+
+.nav-tabs .nav-link:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.15);
+}

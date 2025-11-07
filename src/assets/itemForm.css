@@ -1,0 +1,53 @@
+
+.item-form {
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* Etiquetas */
+.item-form label {
+  font-weight: 600;
+  color: #495057;
+  margin-bottom: 5px;
+}
+
+
+.item-form input[type="text"],
+.item-form input[type="number"],
+.item-form input[type="file"] {
+  border-radius: 6px;
+  border: 1px solid #ced4da;
+  padding: 10px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.item-form input:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+
+/* Botones */
+.item-form .btn {
+  min-width: 100px;
+  font-weight: 500;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.item-form .btn:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+
+.item-form .btn-secondary {
+  background-color: #6c757d;
+  border: none;
+}
+
+.item-form .btn-secondary:hover {
+  background-color: #5a6268;
+}
